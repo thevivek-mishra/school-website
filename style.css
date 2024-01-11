@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapies.com/css2?family=Poopins:wght@100;200;300;400;500;600;700;800;900display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+h1{
+    font-size: .9rem;
+    color: #757373;
+}
+h6{
+    font-size: 1.1rem;
+    color: rgb(24,24,49);
+}
+
+/* navigation  */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15)
+
+}
+
+nav img {
+    cursor: pointer;
+    width: auto;
+    height: 50px;
+
+
+}
+
+ nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+    
+    
+}
+nav .navigation ul li {
+    list-style-type: none;
+    margin-left: 30px;
+   
+    
+} 
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(21,21,100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+
+} 
+nav .navigation ul li a:hover{
+    color: #08f43f;
+}
