@@ -76,7 +76,7 @@ nav .navigation ul li a {
     transition: 0.3s ease;
 
 } 
-nav .navigation ul li a:hover{
+nav .navigation ul li a.active,nav .navigation ul li a:hover{
     color: #08f43f;
 }
 
@@ -429,7 +429,90 @@ footer .copyright p{
     color:#fff;
 
 
-}@media(max-width:769px){
+}
+#about-home{
+    background-image: linear-gradient(rgba(86, 71, 250, 0.3),rgba(5,4,46,0.7)),url("image/school5.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+#about-home{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+#about-container{
+    display: flex;
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+}
+#about-container .about-img{
+    width: 60%;
+    padding-right: 60px;
+    
+
+}
+#about-container .about-img img{
+  width: 100%;  
+}
+
+#about-container .about-text{
+    width: 40%;
+    padding: 60px;
+}
+#about-container .about-text h2{
+    color: #29303b;
+    padding-bottom: 15px;
+}
+#about-container .about-text h2{
+    color: #686f7a;
+    font-weight:  300px; ;
+}
+#about-container .about-text .about-fe{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+#about-container .about-text .about-fe img{
+   width:50px;
+   background-size: cover;
+   background-position: center;
+   margin-right: 20px;
+}
+
+#about-container .about-text .about-fe .fe-text{
+    width:90px;
+
+ }
+ #about-container .about-text .about-fe .fe-text{
+    font-size: 16px;
+    color: #29303B;
+
+ }
+ #trust{
+    text-align: center;
+    padding: 8vw;
+ }
+ #trust .trust-img{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ #trust .trust-img img{
+
+    width: 90%;
+    height: auto;
+ }
+
+@media(max-width:769px){
     nav{
         padding:1
         5px 20px;
@@ -512,6 +595,22 @@ footer .copyright p{
     footer .copyright .pro-links{
         margin-top: 15px;
     }
+
+    /* about */
+    #about-container{
+        padding: 8vw 4vw 2vw 4vw;
+
+    }
+    #about-container .about-img{
+        width: 30px;
+
+    }
+    #about-container .about-img img{
+        width:50% ;
+        height: auto;
+
+    }
+    
 }
 @media (max-width:475px){
 
