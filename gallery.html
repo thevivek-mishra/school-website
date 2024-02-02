@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Photo Gallery</title>
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #42435e;
+    color: white;
+  
+}
+
+.main-gallery{
+   padding-top: 80px;
+   
+}
+
+
+section {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+h2 {
+    
+    margin: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.gallery img {
+    max-width: 25%;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+@media (max-width:475px){
+    .gallery img {
+    max-width: 100%;
+    
+}
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- nav section  -->
+    <nav>
+        <h1>Sunrise Central Public school</h1>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-circle-xmark"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="gallery.html">gallery</a></li>
+            </ul>
+            <img id="menu-btn" src="image/menu.jpeg" alt="">
+        </div>
+    </nav>
+
+    
+<!-- gallery section  -->
+
+
+<main class="main-gallery">
+    <section id="section1">
+        <h2>Classrooms</h2>
+        <div class="gallery" id="gallery1"></div>
+    </section>
+    
+    <section id="section2">
+        <h2>Events</h2>
+        <div class="gallery" id="gallery2"></div>
+    </section>
+    
+    <section id="section3">
+        <h2>Sports</h2>
+        <div class="gallery" id="gallery3"></div>
+    </section>
+    
+    
+</main>
+<footer>
+    <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>marketing Service</li>
+    </div>
+    <div class="footer-col">
+        <h3>Quick Links</h3>
+        <li>Jobs</li>
+        <li>Brand Assets</li>
+        <li>Investor Relations</li>
+        <li>Terms of Service</li>
+    </div>
+    <div class="footer-col">
+        <h3>Features</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>marketing Service</li>
+    </div>
+    <div class="footer-col">
+        <h3>Resources</h3>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>marketing Servic</li>
+    </div>
+    <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>We can trust us. we only send promo offers</p>
+        <div class="subscribe">
+            <input type="text" placeholder="Your Email Address" name="" id="">
+        <a href="#" class="yellow">Subscribe</a>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy 2024 All rights reserved | This template is made by Vivek</p>
+        <div class="pro-links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Placeholder image URLs
+const imagesSection1 = [
+    'image/img1.jpeg',
+    'image/img2.jpeg',
+    'image/img3.jpeg',
+    'image/img4.jpeg',
+    'image/img5.jpeg',
+    'image/img6.jpeg',
+    'image/img7.jpeg',
+    'image/img8.jpeg',
+    'image/img9.jpeg',
+    'image/img10.jpeg',
+    
+   
+];
+
+const imagesSection2 = [
+    'image/img13.jpeg',
+    'image/img14.jpeg',
+    'image/img15.jpeg',
+];
+
+const imagesSection3 = [
+    'image/img10.jpeg',
+    'image/img11.jpeg',
+    'image/img12.jpeg',
+];
+
+// Function to populate the gallery for a section
+function populateGallery(sectionId, images) {
+    const gallery = document.getElementById(sectionId);
+    images.forEach((imageUrl, index) => {
+        const imgElement = document.createElement('img');
+        imgElement.src = imageUrl;
+        imgElement.setAttribute('data-index', index);
+        imgElement.addEventListener('click', openLightbox);
+        gallery.appendChild(imgElement);
+    });
+}
+
+// Populating galleries with images
+populateGallery('gallery1', imagesSection1);
+populateGallery('gallery2', imagesSection2);
+populateGallery('gallery3', imagesSection3);
+
+// Lightbox functionality
+function openLightbox(event) {
+    const index = parseInt(event.target.getAttribute('data-index'), 10);
+    lightbox.open(index);
+}
+
+    </script>
+</body>
+</html>

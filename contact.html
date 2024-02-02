@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/de6c5b2450.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation  -->
+    
+    <nav>
+        <h1>Sunrise Central Public school</h1>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-circle-xmark"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+            </ul>
+            <img id="menu-btn" src="image/menu.jpg" alt="">
+        </div>
+    </nav>
+
+     <!-- this is contact section  -->
+   
+
+     <!-- footer  -->
+     <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>marketing Servic</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>We can trust us. we only send promo offers</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address" name="" id="">
+            <a href="#" class="yellow">Subscribe</a>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy 2024 All rights reserved | This template is made by Vivek</p>
+            <div class="pro-links">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $("#menu-btn").click(function(){
+            $("nav .navigation ul").addClass("active")
+        })
+        $("#menu-close").click(function(){
+            $("nav .navigation ul").removeClass("active")
+        })
+    </script>
+</body>
+</html>
