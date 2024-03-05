@@ -81,6 +81,7 @@ nav .navigation ul li a.active,nav .navigation ul li a:hover{
 }
 
 #home{
+  
 background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("image/school2.jpg");
 width: 100%;
 height: 100vh;
@@ -176,7 +177,8 @@ text-align: center;
 /* course */
 
 #course{
-  padding: 8vw 8vw 8vw 8vw; 
+  /* padding: 8vw 8vw 8vw 8vw;  */
+  padding-top: 100px;
   text-align: center; 
 }
 #course .course-box{
@@ -702,7 +704,7 @@ footer .copyright p{
 
     }
     #home{
-        padding-top: 0px;
+        padding-top: 200px;
     }
     #home p{
         width: 90%;
