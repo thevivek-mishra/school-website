@@ -56,10 +56,8 @@ function openLightbox(event) {
 // Get the modal
 var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("modal-img");
-var images = document.querySelectorAll(".gallery img"); // kha se image aa rha hai
+var images = document.querySelectorAll(".gallery img");
 var currentIndex = 0;
-
-
 
 // Open the modal and display the clicked image
 function openModal(index) {
@@ -85,3 +83,9 @@ function prevImage() {
   modalImg.src = images[currentIndex].src;
 }
 
+// Attach event listeners to images
+images.forEach(function(image, index) {
+  image.addEventListener("click", function() {
+    openModal(index);
+  });
+});
