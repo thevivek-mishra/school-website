@@ -47,7 +47,7 @@ populateGallery('gallery3', imagesSection3);
 // Lightbox functionality
 function openLightbox(event) {
     const index = parseInt(event.target.getAttribute('data-index'), 10);
-    lightbox.open(index);
+    // lightbox.open(index);
 }
 
 
